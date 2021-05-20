@@ -57,3 +57,22 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+
+# Flask
+__pycache__
+*.py[cod]
+bin/
+*.so
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
