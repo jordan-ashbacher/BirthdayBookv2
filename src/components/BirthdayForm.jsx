@@ -5,9 +5,12 @@ import { View,
     SafeAreaView, 
     TextInput, 
     TouchableHighlight } from 'react-native'
-import { connect } from 'react-redux'
+import { useDispatch } from 'react-redux'
+
 
 const BirthdayForm = () => {
+    const dispatch = useDispatch()
+
     const [name, setName] = useState('')
     const [birthday, setBirthday] = useState('')
 
