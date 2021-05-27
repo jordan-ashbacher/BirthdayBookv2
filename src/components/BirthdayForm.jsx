@@ -19,7 +19,7 @@ const BirthdayForm = () => {
             name: name,
             birthday: birthday
         }
-        console.log(newBirthday)
+        dispatch({ type: "ADD_NEW_BIRTHDAY", payload: newBirthday })
     }
 
     return(
@@ -40,7 +40,7 @@ const BirthdayForm = () => {
                     underlineColorAndroid='transparent'
                     placeholderTextColor='#cccccc'
                     placeholder="Birthday"
-                    onChangeText={birthday => setName(birthday)}
+                    onChangeText={birthday => setBirthday(birthday)}
                 ></TextInput>
                 <TouchableHighlight
                     underlayColor='transparent'
